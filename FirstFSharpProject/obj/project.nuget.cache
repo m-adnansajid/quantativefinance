@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5ggt3+9fasIkJCqSMl3OKBWny5REaqMZxttXT679EF7m20AnD2+dsrrRReaslYd5w7jsin/UQwkpTcqNZMZ2vQ==",
+  "success": true,
+  "projectFilePath": "C:\\quantfinance\\quantitative-finance\\FirstFSharpProject\\FirstFSharpProject.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Software Universe\\.nuget\\packages\\fsharp.core\\6.0.1\\fsharp.core.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
