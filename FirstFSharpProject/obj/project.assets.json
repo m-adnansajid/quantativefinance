@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FSharp.Charting/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.0.0.1"
+        },
+        "compile": {
+          "lib/net45/FSharp.Charting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FSharp.Charting.dll": {}
+        }
+      },
       "FSharp.Core/6.0.1": {
         "type": "package",
         "compile": {
@@ -58,10 +70,54 @@
             "copyToOutput": false
           }
         }
+      },
+      "MathNet.Numerics/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {}
+        }
+      },
+      "System.Windows.Forms/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/System.Windows.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/System.Windows.Forms.dll": {}
+        }
+      },
+      "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.NETCore.App"
+        ]
       }
     }
   },
   "libraries": {
+    "FSharp.Charting/2.1.0": {
+      "sha512": "f+j2BKHGtjACQRhF78jY2mwg0Y2sR9/UdkuOWZxF1oGokd4bv/zHsvXwCOKuLkSKgp7KDZJVYiJVjk+jLpk1GA==",
+      "type": "package",
+      "path": "fsharp.charting/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FSharp.Charting.fsx",
+        "fsharp.charting.2.1.0.nupkg.sha512",
+        "fsharp.charting.nuspec",
+        "lib/net45/FSharp.Charting.dll",
+        "lib/net45/FSharp.Charting.xml"
+      ]
+    },
     "FSharp.Core/6.0.1": {
       "sha512": "VrFAiW8dEEekk+0aqlbvMNZzDvYXmgWZwAt68AUBqaWK8RnoEVUNglj66bZzhs4/U63q0EfXlhcEKnH1sTYLjw==",
       "type": "package",
@@ -105,11 +161,65 @@
         "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
       ]
+    },
+    "MathNet.Numerics/5.0.0": {
+      "sha512": "pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
+      "type": "package",
+      "path": "mathnet.numerics/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net461/MathNet.Numerics.dll",
+        "lib/net461/MathNet.Numerics.xml",
+        "lib/net48/MathNet.Numerics.dll",
+        "lib/net48/MathNet.Numerics.xml",
+        "lib/net5.0/MathNet.Numerics.dll",
+        "lib/net5.0/MathNet.Numerics.xml",
+        "lib/net6.0/MathNet.Numerics.dll",
+        "lib/net6.0/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.5.0.0.nupkg.sha512",
+        "mathnet.numerics.nuspec"
+      ]
+    },
+    "System.Windows.Forms/4.0.0": {
+      "sha512": "WL3QPG1q88aIWO0JPOlkCeyNE+FK4ufSKY5j6J6qAFQyfCFiiOYxi8RAhev9H0CS/wmKbIK8qr8xZBod85oWKw==",
+      "type": "package",
+      "path": "system.windows.forms/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/System.Windows.Forms.dll",
+        "system.windows.forms.4.0.0.nupkg.sha512",
+        "system.windows.forms.nuspec"
+      ]
+    },
+    "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+      "sha512": "1EdLFl/I5QobO4shpqUNslDGWTeRbpt3pLMSkiLQYzdWBDqf44/8TM5hXMtkA8ktHU80aVZYVEuxr8vJqcB1Ig==",
+      "type": "package",
+      "path": "system.windows.forms.datavisualization/1.0.0-prerelease.20110.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll",
+        "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.pdb",
+        "ref/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll",
+        "system.windows.forms.datavisualization.1.0.0-prerelease.20110.1.nupkg.sha512",
+        "system.windows.forms.datavisualization.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FSharp.Core >= 6.0.1"
+      "FSharp.Charting >= 2.1.0",
+      "FSharp.Core >= 6.0.1",
+      "MathNet.Numerics >= 5.0.0",
+      "System.Windows.Forms >= 4.0.0",
+      "System.Windows.Forms.DataVisualization >= 1.0.0-prerelease.20110.1"
     ]
   },
   "packageFolders": {
@@ -118,11 +228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\quantfinance\\quantitative-finance\\FirstFSharpProject\\FirstFSharpProject.fsproj",
+      "projectUniqueName": "C:\\quantfinance\\quantitative-finance\\FirstFSharpProject\\FirstFSharpProject.fsproj",
       "projectName": "FirstFSharpProject",
-      "projectPath": "c:\\quantfinance\\quantitative-finance\\FirstFSharpProject\\FirstFSharpProject.fsproj",
+      "projectPath": "C:\\quantfinance\\quantitative-finance\\FirstFSharpProject\\FirstFSharpProject.fsproj",
       "packagesPath": "C:\\Users\\Software Universe\\.nuget\\packages\\",
-      "outputPath": "c:\\quantfinance\\quantitative-finance\\FirstFSharpProject\\obj\\",
+      "outputPath": "C:\\quantfinance\\quantitative-finance\\FirstFSharpProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Software Universe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -144,10 +254,30 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FSharp.Charting": {
+            "target": "Package",
+            "version": "[2.1.0, )",
+            "generatePathProperty": true
+          },
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[6.0.1, )",
+            "generatePathProperty": true
+          },
+          "MathNet.Numerics": {
+            "target": "Package",
+            "version": "[5.0.0, )",
+            "generatePathProperty": true
+          },
+          "System.Windows.Forms": {
+            "target": "Package",
+            "version": "[4.0.0, )",
+            "generatePathProperty": true
+          },
+          "System.Windows.Forms.DataVisualization": {
+            "target": "Package",
+            "version": "[1.0.0-prerelease.20110.1, )",
             "generatePathProperty": true
           }
         },
@@ -169,5 +299,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FSharp.Charting 2.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FSharp.Charting",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Windows.Forms 4.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Windows.Forms",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -8,10 +8,25 @@
     ".NETCoreApp,Version=v6.0": {
       "FirstFSharpProject/1.0.0": {
         "dependencies": {
-          "FSharp.Core": "6.0.1"
+          "FSharp.Charting": "2.1.0",
+          "FSharp.Core": "6.0.1",
+          "MathNet.Numerics": "5.0.0",
+          "System.Windows.Forms": "4.0.0",
+          "System.Windows.Forms.DataVisualization": "1.0.0-prerelease.20110.1"
         },
         "runtime": {
           "FirstFSharpProject.dll": {}
+        }
+      },
+      "FSharp.Charting/2.1.0": {
+        "dependencies": {
+          "FSharp.Core": "6.0.1"
+        },
+        "runtime": {
+          "lib/net45/FSharp.Charting.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
         }
       },
       "FSharp.Core/6.0.1": {
@@ -62,6 +77,30 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "MathNet.Numerics/5.0.0": {
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "System.Windows.Forms/4.0.0": {
+        "runtime": {
+          "lib/System.Windows.Forms.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.1055.0"
+          }
+        }
+      },
+      "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20.11001"
+          }
+        }
       }
     }
   },
@@ -71,12 +110,40 @@
       "serviceable": false,
       "sha512": ""
     },
+    "FSharp.Charting/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f+j2BKHGtjACQRhF78jY2mwg0Y2sR9/UdkuOWZxF1oGokd4bv/zHsvXwCOKuLkSKgp7KDZJVYiJVjk+jLpk1GA==",
+      "path": "fsharp.charting/2.1.0",
+      "hashPath": "fsharp.charting.2.1.0.nupkg.sha512"
+    },
     "FSharp.Core/6.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-VrFAiW8dEEekk+0aqlbvMNZzDvYXmgWZwAt68AUBqaWK8RnoEVUNglj66bZzhs4/U63q0EfXlhcEKnH1sTYLjw==",
       "path": "fsharp.core/6.0.1",
       "hashPath": "fsharp.core.6.0.1.nupkg.sha512"
+    },
+    "MathNet.Numerics/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
+      "path": "mathnet.numerics/5.0.0",
+      "hashPath": "mathnet.numerics.5.0.0.nupkg.sha512"
+    },
+    "System.Windows.Forms/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WL3QPG1q88aIWO0JPOlkCeyNE+FK4ufSKY5j6J6qAFQyfCFiiOYxi8RAhev9H0CS/wmKbIK8qr8xZBod85oWKw==",
+      "path": "system.windows.forms/4.0.0",
+      "hashPath": "system.windows.forms.4.0.0.nupkg.sha512"
+    },
+    "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1EdLFl/I5QobO4shpqUNslDGWTeRbpt3pLMSkiLQYzdWBDqf44/8TM5hXMtkA8ktHU80aVZYVEuxr8vJqcB1Ig==",
+      "path": "system.windows.forms.datavisualization/1.0.0-prerelease.20110.1",
+      "hashPath": "system.windows.forms.datavisualization.1.0.0-prerelease.20110.1.nupkg.sha512"
     }
   }
 }

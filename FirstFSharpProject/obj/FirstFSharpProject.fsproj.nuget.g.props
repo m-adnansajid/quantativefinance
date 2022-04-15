@@ -13,6 +13,10 @@
     <SourceRoot Include="C:\Users\Software Universe\.nuget\packages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSystem_Windows_Forms_DataVisualization Condition=" '$(PkgSystem_Windows_Forms_DataVisualization)' == '' ">C:\Users\Software Universe\.nuget\packages\system.windows.forms.datavisualization\1.0.0-prerelease.20110.1</PkgSystem_Windows_Forms_DataVisualization>
+    <PkgSystem_Windows_Forms Condition=" '$(PkgSystem_Windows_Forms)' == '' ">C:\Users\Software Universe\.nuget\packages\system.windows.forms\4.0.0</PkgSystem_Windows_Forms>
+    <PkgMathNet_Numerics Condition=" '$(PkgMathNet_Numerics)' == '' ">C:\Users\Software Universe\.nuget\packages\mathnet.numerics\5.0.0</PkgMathNet_Numerics>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Software Universe\.nuget\packages\fsharp.core\6.0.1</PkgFSharp_Core>
+    <PkgFSharp_Charting Condition=" '$(PkgFSharp_Charting)' == '' ">C:\Users\Software Universe\.nuget\packages\fsharp.charting\2.1.0</PkgFSharp_Charting>
   </PropertyGroup>
 </Project>

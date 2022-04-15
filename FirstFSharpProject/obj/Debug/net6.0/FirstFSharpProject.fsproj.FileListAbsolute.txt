@@ -24,3 +24,7 @@ C:\quantfinance\quantitative-finance\FirstFSharpProject\obj\Debug\net6.0\FirstFS
 C:\quantfinance\quantitative-finance\FirstFSharpProject\obj\Debug\net6.0\FirstFSharpProject.dll
 C:\quantfinance\quantitative-finance\FirstFSharpProject\obj\Debug\net6.0\FirstFSharpProject.pdb
 C:\quantfinance\quantitative-finance\FirstFSharpProject\obj\Debug\net6.0\FirstFSharpProject.genruntimeconfig.cache
+C:\quantfinance\quantitative-finance\FirstFSharpProject\bin\Debug\net6.0\MathNet.Numerics.dll
+C:\quantfinance\quantitative-finance\FirstFSharpProject\bin\Debug\net6.0\System.Windows.Forms.dll
+C:\quantfinance\quantitative-finance\FirstFSharpProject\bin\Debug\net6.0\FSharp.Charting.dll
+C:\quantfinance\quantitative-finance\FirstFSharpProject\bin\Debug\net6.0\System.Windows.Forms.DataVisualization.dll

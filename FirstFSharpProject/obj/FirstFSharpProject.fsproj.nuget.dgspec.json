@@ -33,10 +33,30 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FSharp.Charting": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "generatePathProperty": true
+            },
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[6.0.1, )",
+              "generatePathProperty": true
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "System.Windows.Forms": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "generatePathProperty": true
+            },
+            "System.Windows.Forms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.0.0-prerelease.20110.1, )",
               "generatePathProperty": true
             }
           },

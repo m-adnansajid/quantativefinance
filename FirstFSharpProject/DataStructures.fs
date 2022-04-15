@@ -525,15 +525,15 @@ module DataStructure
 
    ///Asynchronous and Parallel Programming.
    /// Events...are useful when you want a certain function to execute upon a specific event that will occur sometime in the future.
-    // open System.Windows.Forms
+    open System.Windows.Forms
 
-    // let form = new Form (Text = "F# Events", Visible = true, TopMost= true)
-    // form.Click.Add(fun evArgs -> System.Console.WriteLine("Click even handler"))
-    // Application.Run(form)
+    let form = new Form (Text = "F# Events", Visible = true, TopMost= true)
+    form.Click.Add(fun evArgs -> System.Console.WriteLine("Click even handler"))
+    Application.Run(form)
 
-    // form.MouseDown
-    // |> Event.filter (fun args -> args.X < 50)
-    // |> Event.map (fun args -> printfn "%d %d" args.X args.Y)
+    form.MouseDown
+    |> Event.filter (fun args -> args.X < 50)
+    |> Event.map (fun args -> printfn "%d %d" args.X args.Y)
 
 
     ///Background workers...
@@ -643,28 +643,28 @@ module DataStructure
         |> Seq.max
 
     ///Let Async fetch of CSV data.
-    let fetchAsync(name, url:string)=
-        async{
-            try 
-                let uri = new System.Uri(url)
-                let webClient = new WebClient()
-                let! html = webClient.AsyncDownloadString(uri)
-                let maxPrice = (getMaxPrice(html.ToString()))
-                printfn "Downloaded historical data for %s, max closing price since 2010-01-01: %f" name maxPrice
-            with
-            | ex -> printfn "Exception: %s" ex.Message
-        }
+    // let fetchAsync(name, url:string)=
+    //     async{
+    //         try 
+    //             let uri = new System.Uri(url)
+    //             let webClient = new WebClient()
+    //             let! html = webClient.AsyncDownloadString(uri)
+    //             let maxPrice = (getMaxPrice(html.ToString()))
+    //             printfn "Downloaded historical data for %s, max closing price since 2010-01-01: %f" name maxPrice
+    //         with
+    //         | ex -> printfn "Exception: %s" ex.Message
+    //     }
 
-    /// Helper function to run in async parallel
-    let runAll() = 
-        urlList
-        |> Seq.map fetchAsync
-        |> Async.Parallel
-        |> Async.RunSynchronously
-        |> ignore
+    // /// Helper function to run in async parallel
+    // let runAll() = 
+    //     urlList
+    //     |> Seq.map fetchAsync
+    //     |> Async.Parallel
+    //     |> Async.RunSynchronously
+    //     |> ignore
 
-    /// Get max closing price from 2010-01-01 for each stock
-    runAll()    
+    // /// Get max closing price from 2010-01-01 for each stock
+    // runAll()    
 
 
     ///Parallel programming using TPL.
@@ -713,8 +713,8 @@ module DataStructure
     agent.Post(Reset)
 
     //Send some updates with random values:
-    let random = Helpers.getRandomNumber 5
-    agent.Post(Update random)
+    let random1 = Helpers.getRandomNumber 5
+    agent.Post(Update random1)
     //Agents are powerful constructs that act as state machines.
     // You send messages to them and they change state depending on the logic they contain.
 
@@ -764,19 +764,19 @@ module DataStructure
         static member (~-) (o: OrderClass) =
             OrderClass(o.toggleOrderSide (o.Side), o.Type, o.Price) 
     
-    let order = OrderClass(Buy, Limit, 45.50)
-    order.Side
-    order.toggleOrderSide()
-    order.Side
-    order.toggleOrderSide()
-    order.Side
+    let order1 = OrderClass(Buy, Limit, 45.50)
+    order1.Side
+    order1.toggleOrderSide()
+    order1.Side
+    order1.toggleOrderSide()
+    order1.Side
 
 
     /// Methods and Properties
-    order.Type
-    order.Price
+    order1.Type
+    order1.Price
 
-    let order1 = OrderClass(Buy, Limit, 50.00)
+    let orderOne = OrderClass(Buy, Limit, 50.00)
 
     let order2 = -order1
 
